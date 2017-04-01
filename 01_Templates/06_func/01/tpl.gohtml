@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Indian Cricketers</title>
+</head>
+<body>
+<ul>
+{{range .Player}}
+<li>{{uc .Name}} - {{uc .Role}}</li>
+{{end}}
+</ul>
+<br>
+<br>
+<ul>
+{{range .Transport}}
+<li>{{ft .Manufacturer}} - {{ft .Model}} - {{.Doors}}</li>
+{{end}}
+</ul>
+</body>
+</html>
